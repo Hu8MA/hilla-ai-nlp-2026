@@ -1,63 +1,93 @@
 # How to submit homework
 
-All homework is submitted through **GitHub Classroom**. You get your own **private repository** for each homework: only you and the lecturer can see it.
+You submit homework with a **fork** and a **pull request**, the same way people contribute to real open-source projects.
 
 You work **offline** in the lab and **push from home**.
 
 ---
 
-## Before your first homework
+## Before your first homework (once only)
 
-1. Create a free account at **github.com** (if you don't have one).
-2. Install Git on your computer (done in the week 1 lab).
-3. Tell Git your name and email (once only):
+### 1. Create a GitHub account
+Go to **github.com** and sign up (free).
+
+### 2. Tell Git who you are
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
+```
+
+### 3. Fork the course repository (needs internet)
+1. Open **github.com/Hu8MA/hilla-ai-nlp-2026**
+2. Click **Fork** (top right) → **Create fork**.
+
+You now have your own copy: `github.com/<your-username>/hilla-ai-nlp-2026`
+
+### 4. Clone **your fork** to your computer
+```bash
+git clone https://github.com/<your-username>/hilla-ai-nlp-2026.git
+cd hilla-ai-nlp-2026
 ```
 
 ---
 
 ## For each homework
 
-### 1. Accept the assignment (needs internet)
-1. Open the invitation link shared by the lecturer.
-2. The first time only: choose **your university ID** from the list.
-3. Click **Accept this assignment**.
-4. Wait a few seconds, then open your new repository.
+The example below is for **HW1**. For other homework, change `hw1` to `hw2`, `hw3`, and so on.
 
-### 2. Clone it to your computer (needs internet)
-Click the green **Code** button, copy the link, then run:
+### 1. Update your fork (needs internet)
+New homework is added to the course repository each week, so your fork must be up to date.
+1. On **your fork** on github.com, click **Sync fork** → **Update branch**.
+2. On your computer:
 ```bash
-git clone <the-link-you-copied>
+git checkout main
+git pull
 ```
 
-### 3. Write your answers (offline)
-Open `answers.md` and write your answers under each question.
+### 2. Create a branch for this homework
+```bash
+git checkout -b hw1
+```
+
+### 3. Create your answer file (offline)
+1. Read the questions in `assignments/hw1.md`.
+2. Create your file: `submissions/hw1/<your-github-username>.md`
+3. Write your answers in it.
 
 ### 4. Save your work with commits (offline)
 ```bash
-git add answers.md
-git commit -m "Answer Q1"
+git add submissions/hw1/<your-github-username>.md
+git commit -m "HW1: answer Q1"
 ```
 Commit after each question, with a clear message.
 
-### 5. Push to GitHub (needs internet)
+### 5. Push your branch (needs internet)
 ```bash
-git push
+git push -u origin hw1
 ```
-Open your repository on github.com and check that your answers are there.
+
+### 6. Open a pull request
+1. Open your fork on github.com. You will see a yellow bar: **"hw1 had recent pushes"**.
+2. Click **Compare & pull request**.
+3. Title: `HW1 - <your-github-username>`
+4. Click **Create pull request**.
+
+**Your submission is the pull request.** The time the pull request is opened is your submission time.
+
+### 7. Fix something after submitting?
+Commit and push again to the same `hw1` branch, before the deadline. The pull request updates automatically.
 
 ---
 
 ## Rules
 
-- **Deadline:** the day **before** the next lecture, 11:59 PM.
-- Only work **pushed** before the deadline is graded. A commit on your laptop that you didn't push does not count.
-- Write your answers yourself. Copied answers get zero.
+- **Deadline:** the day **before** the next lecture, 11:59 PM. The pull request must be **opened** before the deadline.
+- Change **only your own file**. Pull requests that touch other files will not be accepted.
+- Use your **GitHub username** only. Do **not** write your full name or university ID in the file: the repository is public.
+- All submissions are public. Copied answers are easy to spot and get **zero**.
 
 ---
 
 ## Feedback
 
-The lecturer writes comments in the **Pull requests → Feedback** tab of your repository. Check it after grading.
+The lecturer comments on your pull request and then **merges** it. After the merge, your name appears in the course repository's **Contributors** list. 🎉
