@@ -1,8 +1,8 @@
 # Natural Language Processing (NLP), 2026/27
 
-**University of Hilla** · Department of Artificial Intelligence
-**Assistant lecturer:** Hussein Mahdi Al-Rubaie
-**Level:** 4th year undergraduate · **Weekly:** 90 min theory + 90 min lab
+#### **University of Hilla** · Department of Artificial Intelligence
+#### **Assistant lecturer:** Hussein Mahdi Al-Rubaie
+#### **Level:** 4th year undergraduate · **Weekly:** 90 min theory + 90 min lab
 
 ---
 
