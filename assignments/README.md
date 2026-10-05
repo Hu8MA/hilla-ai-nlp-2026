@@ -71,10 +71,15 @@ git checkout -b hw-1
 
 ### 4. Save your work with a commit (offline)
 ```bash
-git add assignments/hw-1/<your-github-username>.ipynb
-git commit -m "HW1: <your-github-username>"
+git add assignments/hw-1/<your-name>.ipynb
+git commit -m "HW1: <your-name>"
 ```
 
+```bash
+`for ex`
+git add assignments/hw-1/hussein-mahdi.ipynb
+git commit -m "HW1: hussein mahdi"
+```
 ### 5. Push your branch (needs internet)
 ```bash
 git push -u origin hw-1
@@ -83,7 +88,7 @@ git push -u origin hw-1
 ### 6. Open a pull request
 1. Open your fork on github.com. You will see a yellow bar: **"hw-1 had recent pushes"**.
 2. Click **Compare & pull request**.
-3. Title: `HW1 - <your-github-username>`
+3. Title: `HW1 - <your-name>`
 4. Click **Create pull request**.
 
 **Your submission is the pull request.** The time the pull request is opened is your submission time.
