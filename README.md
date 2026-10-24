@@ -21,7 +21,8 @@ All lab work is done in **plain Python** and **Jupyter notebooks**, and all home
 | Week | Topic | Lecture | Lab |
 |---|---|---|---|
 | 1 | Introduction to NLP | [Lecture 1](lectures/01-introduction.md) | Setup + Git basics |
-| 2 | Text Processing | coming soon | coming soon |
+| 2.1 | Text Processing | [Lecture 2](lectures/02-words-and-tokens.md) | Words and tokens |
+| 2.2 | Text Processing | [Lecture 3](lectures/03-tokenization.md) | Tokenization |
 | 3 | N-Grams | coming soon | coming soon |
 | 4 | Part of Speech Tagging | coming soon | coming soon |
 | 5 | Context Free Grammar and Parsing (1) | coming soon | coming soon |
